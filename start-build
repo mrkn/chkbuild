@@ -38,8 +38,8 @@ require 'chkbuild'
 require 'yaml'
 
 #ChkBuild.rsync_ssh_upload_target("remoteuser@http-server::upload/dir", "/home/chkbuild/.ssh/chkbuild-upload")
-if File.file?(File.expand_path('config/upload.yml', __FILE__))
-  config = YAML.load_file(File.expand_path('config/upload.yml', __FILE__))
+if File.file?(File.expand_path('../config/upload.yml', __FILE__))
+  config = YAML.load_file(File.expand_path('../config/upload.yml', __FILE__))
   if config['rsync']
     ChkBuild.rsync_ssh_upload_target(config['rsync']['target'], config['rsync']['key'])
   end
