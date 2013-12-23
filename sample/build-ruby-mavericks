@@ -53,7 +53,7 @@ ChkBuild.top_uri = nil # use relative URL
 ChkBuild::Ruby.def_target(
   [
     { :suffix_? => '-trunk', :ruby_branch => 'trunk',               :output_interval_timeout => '10min' },
-    { :suffix_? => '-2.1.0', :ruby_branch => 'branches/ruby_2_1',   :output_interval_timeout => '10min' },
+    { :suffix_? => '-2.1',   :ruby_branch => 'branches/ruby_2_1',   :output_interval_timeout => '10min' },
     { :suffix_? => '-2.0.0', :ruby_branch => 'branches/ruby_2_0_0', :output_interval_timeout => '10min' },
     { :suffix_? => '-1.9.3', :ruby_branch => 'branches/ruby_1_9_3', :output_interval_timeout => '10min' },
   ],
